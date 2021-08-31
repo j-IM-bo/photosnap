@@ -1,12 +1,14 @@
 import { gsap, Power1, Power2, Power3, Power4 } from "gsap";
 
 export function initMenu() {
-    const menuButton = document.getElementById("js-menu-button"),
+    const body = document.getElementById("js-body"),
+        overlay = document.querySelector(".js-menu-overlay"),
+        menuButton = document.getElementById("js-menu-button"),
         menu = document.getElementById("js-menu"),
-        menuDivider = document.querySelector(".menu__divider"),
         menuLink = document.querySelectorAll(".menu__link"),
         menuCta = document.querySelector(".menu--button"),
-        menuIsOpenClass = "menu-is-open";
+        menuIsOpenClass = "menu-is-open",
+        stopScrollingClass = "stop-scrolling";
 
     let isActive = false;
 
@@ -16,6 +18,8 @@ export function initMenu() {
         isActive = !isActive;
 
         if (isActive) {
+            body.classList.add(stopScrollingClass);
+            overlay.classList.add(menuIsOpenClass);
             menuButton.classList.add(menuIsOpenClass);
             menu.classList.add(menuIsOpenClass);
             gsap.to(menuLink, {
@@ -24,13 +28,13 @@ export function initMenu() {
                 stagger: 0.1,
                 ease: Power4.easeInOut
             });
-            menuDivider.classList.add(menuIsOpenClass);
             menuCta.classList.add(menuIsOpenClass);
         } else {
+            body.classList.remove(stopScrollingClass);
+            overlay.classList.remove(menuIsOpenClass);
             menuButton.classList.remove(menuIsOpenClass);
             menu.classList.remove(menuIsOpenClass);
             gsap.to(menuLink, { y: 105, stagger: 0.1 });
-            menuDivider.classList.remove(menuIsOpenClass);
             menuCta.classList.remove(menuIsOpenClass);
         }
     });

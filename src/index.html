@@ -14,7 +14,6 @@
 
         <!-- Favicon -->
     </head>
-    <!-- <div class="grid"><div class="grid__inner"></div></div> -->
 
     <body id="js-body">
         <header id="js-header" class="header">
@@ -55,32 +54,89 @@
                     <div class="z"></div>
                 </button>
             </div>
-
-            <div id="js-menu" class="menu d-t-hidden">
-                <div class="menu__inner">
-                    <nav>
-                        <ul class="menu__list">
-                            <li class="menu__list-item">
-                                <a href="#" class="menu__link">Stories</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a href="#" class="menu__link">Features</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a href="#" class="menu__link">Pricing</a>
-                            </li>
-                        </ul>
-                        <div class="menu__divider"></div>
-                        <button class="btn1-p menu--button">
-                            Get an invite
-                        </button>
-                    </nav>
-                </div>
-            </div>
         </header>
 
-        <main>
-            <section class="about"></section>
+        <div id="js-menu" class="menu d-t-hidden">
+            <div class="menu__inner">
+                <nav>
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__link">Stories</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__link">Features</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__link">Pricing</a>
+                        </li>
+                    </ul>
+                    <div class="menu__divider"></div>
+                    <button class="btn1-p menu--button">Get an invite</button>
+                </nav>
+            </div>
+        </div>
+        <div class="js-menu-overlay"></div>
+
+        <main id="main">
+            <section class="about">
+                <div class="about__feature">
+                    <div class="about__content about__content--dark">
+                        <div class="about__content-inner">
+                            <div class="about__decor-line"></div>
+
+                            <h1>
+                                Create and <br />
+                                share your <br />
+                                photo stories.
+                            </h1>
+                            <p>
+                                Photosnap is a platform for photographers and
+                                visual storytellers. We make it easy to share
+                                photos, tell stories and connect with others.
+                            </p>
+
+                            <a href="#">
+                                <button class="btn2-s">
+                                    Get an invite
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="43"
+                                        height="14"
+                                    >
+                                        <g
+                                            fill="none"
+                                            fill-rule="evenodd"
+                                            stroke="#000"
+                                        >
+                                            <path
+                                                d="M0 7h41.864M35.428 1l6 6-6 6"
+                                            />
+                                        </g>
+                                    </svg>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="about__image">
+                        <img
+                            class="about__image-mobile"
+                            src="./images/home/mobile/create-and-share.jpg"
+                            alt="person holding a camera"
+                        />
+                        <img
+                            class="about__image-tablet"
+                            src="./images/home/tablet/create-and-share.jpg"
+                            alt="person holding a camera"
+                        />
+                        <img
+                            class="about__image-desktop"
+                            src="./images/home/desktop/create-and-share.jpg"
+                            alt="person holding a camera"
+                        />
+                    </div>
+                </div>
+            </section>
         </main>
 
         <!-- footer -->

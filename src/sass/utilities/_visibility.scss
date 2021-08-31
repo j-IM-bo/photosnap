@@ -16,7 +16,7 @@
 .m-hidden {
     display: none;
 
-    @include bp(small-up) {
+    @include bp(small) {
         display: block;
     }
 }
@@ -24,7 +24,7 @@
 .d-t-hidden {
     display: block;
 
-    @include bp(small-up) {
+    @include bp(small) {
         display: none;
     }
 }
