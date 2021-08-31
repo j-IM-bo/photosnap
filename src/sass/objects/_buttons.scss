@@ -1,0 +1,63 @@
+/*------------------------------------*\
+   Buttons
+\*------------------------------------*/
+
+.btn1-p,
+.btn1-s,
+.btn2-p,
+.btn2-s {
+    @include f-sm();
+}
+
+// primary buttons
+
+.btn1-p,
+.btn1-s {
+    padding: 1.6rem 4.4rem;
+    transition: var(--transition);
+
+    &:hover {
+        background-color: var(--c-bg-grey);
+        color: var(--c-font-black);
+    }
+}
+
+.btn1-p {
+    background-color: var(--c-bg-black);
+    color: var(--c-font-white);
+}
+.btn1-s {
+    background-color: var(--white);
+    color: var(--c-font-black);
+}
+
+// secondary buttons
+
+.btn2-p,
+.btn2-s {
+    display: flex;
+    margin-top: 1rem;
+
+    svg {
+        margin-left: 1rem;
+    }
+
+    &:hover {
+        svg {
+            transform: translateX(0.5rem);
+            transition: var(--transition);
+        }
+    }
+}
+
+.btn2-p {
+}
+.btn2-s {
+    color: var(--c-font-white);
+
+    svg {
+        path {
+            stroke: #fff;
+        }
+    }
+}

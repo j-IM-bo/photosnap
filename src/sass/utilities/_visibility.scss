@@ -1,0 +1,30 @@
+/*------------------------------------*\
+	Accessibly Hidden
+\*------------------------------------*/
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 0.1rem;
+    width: 0.1rem;
+    margin: -0.1rem;
+    padding: 0;
+    border: 0;
+}
+
+.m-hidden {
+    display: none;
+
+    @include bp(small-up) {
+        display: block;
+    }
+}
+
+.d-t-hidden {
+    display: block;
+
+    @include bp(small-up) {
+        display: none;
+    }
+}
