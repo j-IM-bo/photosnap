@@ -23,9 +23,14 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 1.2rem;
-    padding-right: 4rem;
-    padding-left: 4rem;
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
     transition: var(--transition);
+
+    @include bp(small-up) {
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
 
     @include bp(medium-up) {
         padding-left: 16.5rem;

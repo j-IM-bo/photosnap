@@ -7,8 +7,8 @@
     display: block;
     width: 4.2rem;
     height: 3.6rem;
-    top: 1.1rem;
-    right: 0.2rem;
+    top: 2.2rem;
+    right: 2.4rem;
     pointer-events: auto;
     @include z-index(level6);
 
@@ -16,7 +16,7 @@
         pointer-events: none;
     }
 
-    @include bp(medium) {
+    @include bp(small-up) {
         display: none;
     }
 }
@@ -26,35 +26,37 @@
 .z {
     position: absolute;
     margin: auto;
-    left: 1.2rem;
-    background-color: var(--c-bg-light-1);
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%, 0);
+    background-color: var(--c-bg-black);
     border-radius: 0;
     height: 0.1rem;
-    width: 2.1rem;
+    width: 2.4rem;
     transition: var(--transition);
 }
 
 .x {
     top: 1.2rem;
 
-    .menu-is-active & {
+    .menu-is-open & {
         top: 1.8rem;
         transform: rotate(45deg);
     }
 }
 
-.y {
-    top: 1.8rem;
+// .y {
+//     top: 1.8rem;
 
-    .menu-is-active & {
-        opacity: 0;
-    }
-}
+//     .menu-is-active & {
+//         opacity: 0;
+//     }
+// }
 
 .z {
-    top: 2.4rem;
+    top: 1.8rem;
 
-    .menu-is-active & {
+    .menu-is-open & {
         top: 1.8rem;
         transform: rotate(-45deg);
     }

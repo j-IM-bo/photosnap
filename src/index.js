@@ -9,12 +9,14 @@ import "./sass/style.scss";
 // import { debounce } from "./js/utilities/debounce";
 import { viewportSize } from "./js/utilities/viewportSize";
 
-import { header, initHeader } from "./js/header";
+import { initHeader } from "./js/header";
+import { initMenu } from "./js/menu";
 
 function init() {
     viewportSize();
 
     initHeader();
+    initMenu();
 }
 
 window.addEventListener("load", function () {

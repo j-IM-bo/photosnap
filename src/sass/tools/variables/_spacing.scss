@@ -24,8 +24,8 @@
 }
 
 @mixin h-gutter() {
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
 
     @include bp(small) {
         margin-left: 4rem;
