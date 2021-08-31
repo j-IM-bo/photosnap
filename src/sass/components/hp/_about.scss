@@ -3,7 +3,6 @@
 \*------------------------------------*/
 
 .about {
-    background: var(--c-bg-black);
     width: 100%;
 }
 
@@ -19,7 +18,9 @@
     }
 }
 .about__feature--reverse {
-    flex-direction: row-reverse;
+    @include bp(small) {
+        flex-direction: row-reverse;
+    }
 }
 
 .about__content {
@@ -37,10 +38,23 @@
 }
 .about__content--dark {
     color: var(--c-font-white);
+    background: var(--c-bg-black);
 }
 
 .about__content-inner {
     position: relative;
+
+    h2 {
+        font-size: 3.2rem;
+        line-height: 4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        @include bp(small) {
+            font-size: 4rem;
+            line-height: 4.8rem;
+        }
+    }
 
     p {
         margin-bottom: 5rem;

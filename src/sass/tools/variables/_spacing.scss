@@ -27,9 +27,9 @@
     padding: 8rem 2.4rem;
 
     @include bp(small) {
-        padding: 12vw 5.4rem;
+        padding: 10vw 5.4rem;
     }
     @include bp(medium) {
-        padding: 1vw 5.365853658536586vw;
+        padding: 0.5vw 5.365853658536586vw;
     }
 }
