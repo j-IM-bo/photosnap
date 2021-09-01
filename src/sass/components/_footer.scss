@@ -1,0 +1,124 @@
+/*------------------------------------*\
+    Footer
+\*------------------------------------*/
+
+.footer {
+    width: 100%;
+    background: var(--c-bg-black);
+    color: var(--c-font-white);
+}
+
+.footer__wrapper {
+    position: relative;
+    text-align: center;
+    padding: 5.6rem 6.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include bp(small) {
+        display: grid;
+        grid-template:
+            [row1-start] "logo cta1" [row1-end]
+            [row2-start] "nav cta" [row2-end]
+            [row3-start] "socials copywrite" [row3-end] / 50% 50%;
+
+        text-align: left;
+        padding: 6.4rem 3.9rem;
+    }
+    @include bp(medium) {
+        grid-template:
+            [row1-start] "logo nav cta1" [row1-end]
+            [row2-start] "log nav cta" [row2-end]
+            [row3-start] "socials nav copywrite" [row3-end];
+
+        padding: 6.4rem 17rem;
+    }
+}
+
+.footer__site-link {
+    grid-area: logo;
+    margin-bottom: 3.2rem;
+
+    @include bp(small) {
+        margin-bottom: 0px;
+    }
+}
+
+.footer__socials {
+    display: flex;
+    margin-bottom: 5.3rem;
+    grid-area: socials;
+
+    > div {
+        margin: auto 1rem;
+    }
+
+    @include bp(small) {
+        margin-bottom: 0px;
+    }
+}
+
+.footer__nav {
+    margin-bottom: 12rem;
+    grid-area: nav;
+
+    @include bp(small) {
+        margin-top: 3.2rem;
+        margin-bottom: 7.6rem;
+    }
+    @include bp(medium) {
+        margin: 0;
+    }
+}
+.footer__nav-list {
+    @include bp(small) {
+        display: flex;
+    }
+    @include bp(medium) {
+        display: block;
+    }
+}
+.footer__nav-list-item {
+    &:not(:last-child) {
+        margin-bottom: 2.7rem;
+    }
+
+    @include bp(small) {
+        &:not(:last-child) {
+            margin: 0 2.5rem 0 0;
+        }
+    }
+    @include bp(medium) {
+        &:not(:last-child) {
+            margin: 0 0 2rem 0;
+        }
+    }
+}
+.footer__nav-link {
+    @include f-sm();
+}
+
+.footer__cta {
+    margin-bottom: 3.9rem;
+    grid-area: cta1;
+
+    @include bp(small) {
+        margin-bottom: 0px;
+        justify-self: right;
+        align-self: start;
+
+        button {
+            margin: 0;
+        }
+    }
+}
+
+.footer__copywrite {
+    opacity: 0.5;
+    grid-area: copywrite;
+
+    @include bp(small) {
+        text-align: right;
+    }
+}
