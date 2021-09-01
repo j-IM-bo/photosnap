@@ -2,11 +2,38 @@
    Images
 \*------------------------------------*/
 
-img, 
-.img, 
-picture, 
+img,
+.img,
+picture,
 .picture {
     display: block;
     width: 100%;
     height: auto;
+}
+
+// images
+
+.image-mobile {
+    display: block;
+
+    @include bp(small) {
+        display: none;
+    }
+}
+.image-tablet {
+    display: none;
+
+    @include bp(small) {
+        display: block;
+    }
+    @include bp(medium) {
+        display: none;
+    }
+}
+.image-desktop {
+    display: none;
+
+    @include bp(medium) {
+        display: block;
+    }
 }

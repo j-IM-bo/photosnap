@@ -95,29 +95,8 @@
     }
 }
 
-// images
-
-.about__image-mobile {
-    display: block;
-
-    @include bp(small) {
-        display: none;
-    }
-}
-.about__image-tablet {
-    display: none;
-
-    @include bp(small) {
-        display: block;
-    }
-    @include bp(medium) {
-        display: none;
-    }
-}
-.about__image-desktop {
-    display: none;
-
-    @include bp(medium) {
-        display: block;
-    }
+.reveal {
+    opacity: 0;
+    visibility: hidden;
+    will-change: transform, opacity;
 }
