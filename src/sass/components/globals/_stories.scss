@@ -2,11 +2,11 @@
     feature stories
 \*------------------------------------*/
 
-.f-stories {
+.stories {
     width: 100%;
 }
 
-.f-stories__grid {
+.stories__grid {
     display: grid;
     grid-template-columns: 1fr;
 
@@ -18,7 +18,7 @@
     }
 }
 
-.f-stories__card-bg {
+.stories__card-bg {
     position: relative;
     width: 101%;
     height: auto;
@@ -50,7 +50,7 @@
     }
 }
 
-.f-stories__card {
+.stories__card {
     position: relative;
     overflow: hidden;
 
@@ -70,7 +70,7 @@
     }
 }
 
-.f-stories__card-inner {
+.stories__card-inner {
     position: absolute;
     top: 0;
     left: 0;
@@ -81,11 +81,11 @@
     align-items: flex-end;
 }
 
-.f-stories__card-inner-content {
+.stories__card-inner-content {
     width: 100%;
 }
 
-.f-stories__title {
+.stories__title {
     color: var(--c-font-white);
     border-bottom: 0.1rem solid rgba(255, 255, 255, 0.466);
 
@@ -97,7 +97,7 @@
     }
 }
 
-.f-stories__link {
+.stories__link {
 }
 
 .story-btn {

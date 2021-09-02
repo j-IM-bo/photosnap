@@ -97,6 +97,11 @@
 }
 .footer__nav-link {
     @include f-sm();
+
+    &:hover {
+        color: rgb(83, 83, 83);
+        transition: color 0.3s ease-in-out;
+    }
 }
 
 .footer__cta {

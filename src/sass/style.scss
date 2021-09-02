@@ -85,11 +85,12 @@
     Components
 \*------------------------------------*/
 
-@import "components/header";
-@import "components/menu";
-@import "components/footer";
+// global
+@import "components/globals/header";
+@import "components/globals/menu";
+@import "components/globals/footer";
+@import "components/globals/stories";
 
 // hompepage
 @import "components/hp/about";
-@import "components/hp/f-stories";
 @import "components/hp/s-features";
