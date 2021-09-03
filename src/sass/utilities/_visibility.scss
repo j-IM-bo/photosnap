@@ -28,3 +28,20 @@
         display: none;
     }
 }
+.m-t-hidden {
+    display: none;
+
+    @include bp(medium) {
+        display: block;
+    }
+}
+.m-d-hidden {
+    display: none;
+
+    @include bp(small) {
+        display: block;
+    }
+    @include bp(medium) {
+        display: none;
+    }
+}
