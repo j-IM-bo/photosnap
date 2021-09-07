@@ -1,0 +1,75 @@
+/*------------------------------------*\
+    hero global
+\*------------------------------------*/
+
+.hero {
+    width: 100%;
+}
+
+.hero__feature {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+
+    @include bp(small) {
+        flex-direction: row;
+    }
+}
+
+.hero__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    @include tile-pd();
+    color: var(--c-font-white);
+    background: var(--c-bg-black);
+
+    @include bp(small) {
+        width: 60%;
+    }
+    @include bp(medium) {
+        width: 40%;
+    }
+}
+
+.hero__content-inner {
+    position: relative;
+
+    p {
+        @include bp(medium) {
+            max-width: 38rem;
+        }
+    }
+}
+
+.hero__decor-line {
+    position: absolute;
+    top: -8rem;
+    width: 12.8rem;
+    height: 0.6rem;
+    background: var(--c-bg-grad);
+
+    @include bp(small) {
+        top: 0.5rem;
+        left: -5.4rem;
+        width: 0.6rem;
+        height: 14.4rem;
+    }
+    @include bp(medium) {
+        left: -5.365853658536586vw;
+    }
+}
+
+.hero__image {
+    width: 100%;
+    height: 100%;
+
+    @include bp(small) {
+        width: 40%;
+    }
+    @include bp(medium) {
+        width: 60%;
+    }
+}

@@ -69,6 +69,12 @@ module.exports = {
             inject: "body",
             chunks: ["index"],
             filename: "stories.html"
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/features.html",
+            inject: "body",
+            chunks: ["index"],
+            filename: "features.html"
         })
     ],
     devtool: "source-map",
