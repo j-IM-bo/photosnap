@@ -16,6 +16,9 @@ import { initMenu } from "./js/menu";
 // homepage
 import { initAbout } from "./js/hp/about";
 
+// pricing page
+import { initPricingToggle } from "./js/pp/pricing-toggle";
+
 function init() {
     viewportSize();
 
@@ -23,6 +26,8 @@ function init() {
     initMenu();
 
     initAbout();
+
+    initPricingToggle();
 }
 
 window.addEventListener("load", function () {
