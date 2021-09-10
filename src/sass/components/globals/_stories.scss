@@ -54,7 +54,7 @@
 .stories__card {
     position: relative;
     overflow: hidden;
-    transition: transform 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
 
     @include bp(medium) {
         &:hover {
