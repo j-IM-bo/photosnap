@@ -13,6 +13,27 @@
         <meta name="photosnap" content="front-end challenge" />
 
         <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#2b5797" />
+        <meta name="theme-color" content="#ffffff" />
     </head>
 
     <body id="js-body">
@@ -129,7 +150,7 @@
 
             <!-- pricing -->
             <section class="pricing">
-                <div class="pricing__inner">
+                <div id="js-pricing-toggle" class="pricing__inner">
                     <div
                         id="js-toggle-container"
                         class="pricing__toggle-container"
@@ -230,6 +251,313 @@
                 </div>
             </section>
             <!-- /end .pricing -->
+
+            <!-- compare -->
+            <section class="compare">
+                <h2 class="compare__header">Compare</h2>
+
+                <div class="compare__table-container">
+                    <div class="compare__table-header">
+                        <div class="table-header__left">
+                            <h4>The features</h4>
+                        </div>
+                        <div class="table-header__right m-hidden">
+                            <div class="table-header__right-inner">
+                                <div class="header__plan">
+                                    <h4>Basic</h4>
+                                </div>
+                                <div class="header__plan">
+                                    <h4>Pro</h4>
+                                </div>
+                                <div class="header__plan">
+                                    <h4>Business</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__line"></div>
+                    <!-- table rows -->
+                    <div class="compare__table-row">
+                        <div class="table-row__left">
+                            <h4>UNLIMITED STORY POSTING</h4>
+                        </div>
+
+                        <div class="table-row__right">
+                            <div class="table-row__feature-check">
+                                <div class="m-plan-header d-t-hidden">
+                                    <h4>basic</h4>
+                                </div>
+                                <div class="plan-check">
+                                    <img
+                                        src="./images/pricing/desktop/check.svg"
+                                        alt="tick icon"
+                                    />
+                                </div>
+                            </div>
+                            <div class="table-row__feature-check">
+                                <div class="m-plan-header d-t-hidden">
+                                    <h4>pro</h4>
+                                </div>
+                                <div class="plan-check">
+                                    <img
+                                        src="./images/pricing/desktop/check.svg"
+                                        alt="tick icon"
+                                    />
+                                </div>
+                            </div>
+                            <div class="table-row__feature-check">
+                                <div class="m-plan-header d-t-hidden">
+                                    <h4>business</h4>
+                                </div>
+                                <div class="plan-check">
+                                    <img
+                                        src="./images/pricing/desktop/check.svg"
+                                        alt="tick icon"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="compare__table-row">
+                        <div class="table-row__left">
+                            <h4>UNLIMITED PHOTO UPLOAD</h4>
+                        </div>
+
+                        <div class="table-row__right">
+                            <div class="table-row__feature-check">
+                                <div class="m-plan-header d-t-hidden">
+                                    <h4>basic</h4>
+                                </div>
+                                <div class="plan-check">
+                                    <img
+                                        src="./images/pricing/desktop/check.svg"
+                                        alt="tick icon"
+                                    />
+                                </div>
+                            </div>
+                            <div class="table-row__feature-check">
+                                <div class="m-plan-header d-t-hidden">
+                                    <h4>pro</h4>
+                                </div>
+                                <div class="plan-check">
+                                    <img
+                                        src="./images/pricing/desktop/check.svg"
+                                        alt="tick icon"
+                                    />
+                                </div>
+                            </div>
+                            <div class="table-row__feature-check">
+                                <div class="m-plan-header d-t-hidden">
+                                    <h4>business</h4>
+                                </div>
+                                <div class="plan-check">
+                                    <img
+                                        src="./images/pricing/desktop/check.svg"
+                                        alt="tick icon"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="compare__table-row">
+                        <div class="table-row__left">
+                            <h4>EMBEDDING CUSTOM CONTENT</h4>
+                        </div>
+
+                        <div class="table-row__right">
+                            <div class="table-row__feature-check">
+                                <div class="m-plan-header d-t-hidden">
+                                    <h4>basic</h4>
+                                </div>
+                                <div class="plan-check"></div>
+                            </div>
+                            <div class="table-row__feature-check">
+                                <div class="m-plan-header d-t-hidden">
+                                    <h4>pro</h4>
+                                </div>
+                                <div class="plan-check">
+                                    <img
+                                        src="./images/pricing/desktop/check.svg"
+                                        alt="tick icon"
+                                    />
+                                </div>
+                            </div>
+                            <div class="table-row__feature-check">
+                                <div class="m-plan-header d-t-hidden">
+                                    <h4>business</h4>
+                                </div>
+                                <div class="plan-check">
+                                    <img
+                                        src="./images/pricing/desktop/check.svg"
+                                        alt="tick icon"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="compare__table-row">
+                        <div class="table-row__left">
+                            <h4>CUSTOMIZE METADATA</h4>
+                        </div>
+
+                        <div class="table-row__right">
+                            <div class="table-row__feature-check">
+                                <div class="m-plan-header d-t-hidden">
+                                    <h4>basic</h4>
+                                </div>
+                                <div class="plan-check"></div>
+                            </div>
+                            <div class="table-row__feature-check">
+                                <div class="m-plan-header d-t-hidden">
+                                    <h4>pro</h4>
+                                </div>
+                                <div class="plan-check">
+                                    <img
+                                        src="./images/pricing/desktop/check.svg"
+                                        alt="tick icon"
+                                    />
+                                </div>
+                            </div>
+                            <div class="table-row__feature-check">
+                                <div class="m-plan-header d-t-hidden">
+                                    <h4>business</h4>
+                                </div>
+                                <div class="plan-check">
+                                    <img
+                                        src="./images/pricing/desktop/check.svg"
+                                        alt="tick icon"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="compare__table-row">
+                        <div class="table-row__left">
+                            <h4>ADVANCED METRICS</h4>
+                        </div>
+
+                        <div class="table-row__right">
+                            <div class="table-row__feature-check">
+                                <div class="m-plan-header d-t-hidden">
+                                    <h4>basic</h4>
+                                </div>
+                                <div class="plan-check"></div>
+                            </div>
+                            <div class="table-row__feature-check">
+                                <div class="m-plan-header d-t-hidden">
+                                    <h4>pro</h4>
+                                </div>
+                                <div class="plan-check"></div>
+                            </div>
+                            <div class="table-row__feature-check">
+                                <div class="m-plan-header d-t-hidden">
+                                    <h4>business</h4>
+                                </div>
+                                <div class="plan-check">
+                                    <img
+                                        src="./images/pricing/desktop/check.svg"
+                                        alt="tick icon"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="compare__table-row">
+                        <div class="table-row__left">
+                            <h4>PHOTO DOWNLOADS</h4>
+                        </div>
+
+                        <div class="table-row__right">
+                            <div class="table-row__feature-check">
+                                <div class="m-plan-header d-t-hidden">
+                                    <h4>basic</h4>
+                                </div>
+                                <div class="plan-check"></div>
+                            </div>
+                            <div class="table-row__feature-check">
+                                <div class="m-plan-header d-t-hidden">
+                                    <h4>pro</h4>
+                                </div>
+                                <div class="plan-check"></div>
+                            </div>
+                            <div class="table-row__feature-check">
+                                <div class="m-plan-header d-t-hidden">
+                                    <h4>business</h4>
+                                </div>
+                                <div class="plan-check">
+                                    <img
+                                        src="./images/pricing/desktop/check.svg"
+                                        alt="tick icon"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="compare__table-row">
+                        <div class="table-row__left">
+                            <h4>SEARCH ENGINE INDEXING</h4>
+                        </div>
+
+                        <div class="table-row__right">
+                            <div class="table-row__feature-check">
+                                <div class="m-plan-header d-t-hidden">
+                                    <h4>basic</h4>
+                                </div>
+                                <div class="plan-check"></div>
+                            </div>
+                            <div class="table-row__feature-check">
+                                <div class="m-plan-header d-t-hidden">
+                                    <h4>pro</h4>
+                                </div>
+                                <div class="plan-check"></div>
+                            </div>
+                            <div class="table-row__feature-check">
+                                <div class="m-plan-header d-t-hidden">
+                                    <h4>business</h4>
+                                </div>
+                                <div class="plan-check">
+                                    <img
+                                        src="./images/pricing/desktop/check.svg"
+                                        alt="tick icon"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="compare__table-row">
+                        <div class="table-row__left">
+                            <h4>CUSTOM ANALYTICS</h4>
+                        </div>
+
+                        <div class="table-row__right">
+                            <div class="table-row__feature-check">
+                                <div class="m-plan-header d-t-hidden">
+                                    <h4>basic</h4>
+                                </div>
+                                <div class="plan-check"></div>
+                            </div>
+                            <div class="table-row__feature-check">
+                                <div class="m-plan-header d-t-hidden">
+                                    <h4>pro</h4>
+                                </div>
+                                <div class="plan-check"></div>
+                            </div>
+                            <div class="table-row__feature-check">
+                                <div class="m-plan-header d-t-hidden">
+                                    <h4>business</h4>
+                                </div>
+                                <div class="plan-check">
+                                    <img
+                                        src="./images/pricing/desktop/check.svg"
+                                        alt="tick icon"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /end .compare -->
 
             <!-- cta -->
             <section class="cta">

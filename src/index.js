@@ -7,7 +7,10 @@ import "./sass/style.scss";
 // gsap.registerPlugin(ScrollTrigger);
 // import Flickity from "flickity";
 // import { debounce } from "./js/utilities/debounce";
-import { viewportSize } from "./js/utilities/viewportSize";
+// import { viewportSize } from "./js/utilities/viewportSize";
+
+// Global variables
+const pricingToggle = document.getElementById("js-pricing-toggle");
 
 // nav/menu
 import { initHeader } from "./js/header";
@@ -20,14 +23,13 @@ import { initAbout } from "./js/hp/about";
 import { initPricingToggle } from "./js/pp/pricing-toggle";
 
 function init() {
-    viewportSize();
-
     initHeader();
     initMenu();
-
     initAbout();
 
-    initPricingToggle();
+    if (typeof pricingToggle != "undefined" && pricingToggle != null) {
+        initPricingToggle();
+    }
 }
 
 window.addEventListener("load", function () {
